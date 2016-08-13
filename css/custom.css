@@ -1,0 +1,186 @@
+/* your styles go here */
+
+.component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.component * h2.heading {
+    color: #ffff6d;
+    font-size: 24px;
+}
+
+.component > div {
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+#promoEmailRow {
+    padding-top: 5em;
+}
+
+.row {
+    animation-duration: 2s;
+}
+
+#signup {
+    color: black;
+    font-size: 18px;
+}
+
+/*table*/
+table {
+    width: 100%;
+}
+
+td, th {
+    text-align: center;
+    padding: 6px;
+    border: solid 1px #ccc;
+    font-size: 22px;
+}
+
+td {
+    color: red;
+}
+
+.check {
+    color: #4fbfa8;
+    font-size: 30px;
+}
+
+th:first-child,
+td:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+.visible-xs {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .check {
+        color: limegreen;
+        font-size: 20px;
+    }
+    .visible-xs {
+        display: table-row;
+        background: #efefef;
+    }
+    .visible-xs td, th {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    td:first-child,
+    th:first-child {
+        display: none;
+    }
+}
+
+.p {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 130px;
+}
+
+.squares {
+    width: 50% !important; 
+    height: 50% !important; 
+    float: left;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.squares:after {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    margin: -15px;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+    content:'';
+    display:block;
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .squares {
+	   width: 100%;
+        height: 100%;
+    }
+}
+
+#square1.squares:after {
+	background: url('../img/discipline.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square2.squares:after {
+	background: url('../img/work.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square3.squares:after {
+	background: url('../img/movement.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square4.squares:after {
+	background: url('../img/motivation.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square5.squares:after {
+	background: url('../img/commitment.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square6.squares:after {
+	background: url('../img/fun.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square7.squares:after {
+	background: url('../img/environement.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#square8.squares:after {
+	background: url('../img/challenge.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.squares:hover:after {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+
+iframe {
+    margin-top: -100px;
+}
+
+.promo1 {
+	background-color: transparent;
+    border-radius: 3px;
+    height: 34px;
+    
+}
